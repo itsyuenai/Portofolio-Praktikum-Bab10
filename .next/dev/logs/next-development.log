@@ -1,0 +1,184 @@
+[00:00:05.239] Server  LOG      ✓ Ready in 4.5s
+[00:00:10.193] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.690] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/image_04.jpg" "received" null
+[00:00:12.949] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/image_01.jpg" "received" null
+[00:00:12.955] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/image_02.jpg" "received" null
+[00:00:12.974] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/image_03.jpg" "received" null
+[00:00:26.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:27.891] Browser WARN    Image with src "/images/image_04.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:27.891] Browser WARN    Image with src "/images/image_01.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:27.891] Browser WARN    Image with src "/images/image_02.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:27.891] Browser WARN    Image with src "/images/image_03.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:06.337] Server  LOG      ✓ Compiled in 21ms
+[00:01:12.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:18.167] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/image_04.jpg" "received" null
+[00:01:18.182] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/image_01.jpg" "received" null
+[00:01:18.185] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/image_02.jpg" "received" null
+[00:01:18.187] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/image_03.jpg" "received" null
+[00:01:48.851] Server  LOG      ✓ Compiled in 12ms
+[00:02:34.532] Server  LOG      ✓ Compiled in 13ms
+[00:02:39.834] Server  LOG      ✓ Compiled in 10ms
+[00:03:01.246] Server  LOG      ✓ Compiled in 15ms
+[00:03:06.312] Server  LOG      ✓ Compiled in 15ms
+[00:03:14.415] Server  LOG      ✓ Compiled in 15ms
+[00:03:16.157] Server  LOG      ✓ Compiled in 13ms
+[00:03:22.082] Server  LOG      ✓ Compiled in 12ms
+[00:03:47.405] Server  LOG      ✓ Compiled in 11ms
+[00:03:56.750] Server  LOG      ✓ Compiled in 19ms
+[00:04:00.499] Server  LOG      ✓ Compiled in 16ms
+[00:04:11.343] Server  LOG      ✓ Compiled in 9ms
+[00:04:26.315] Server  LOG      ✓ Compiled in 13ms
+[00:04:28.116] Server  LOG      ✓ Compiled in 13ms
+[00:04:32.714] Server  LOG      ✓ Compiled in 9ms
+[00:04:39.447] Server  LOG      ✓ Compiled in 15ms
+[00:04:50.797] Server  LOG      ✓ Compiled in 10ms
+[00:05:02.781] Server  LOG      ✓ Compiled in 15ms
+[00:05:03.781] Server  LOG      ✓ Compiled in 14ms
+[00:05:08.341] Server  LOG      ✓ Compiled in 12ms
+[00:05:13.855] Server  LOG      ✓ Compiled in 17ms
+[00:05:16.403] Server  LOG      ✓ Compiled in 15ms
+[00:05:28.779] Server  LOG      ✓ Compiled in 15ms
+[00:05:37.355] Server  LOG      ✓ Compiled in 13ms
+[00:05:40.764] Server  LOG      ✓ Compiled in 10ms
+[00:05:55.034] Server  LOG      ✓ Compiled in 12ms
+[00:06:20.344] Server  LOG      ✓ Compiled in 16ms
+[00:06:24.495] Server  LOG      ✓ Compiled in 15ms
+[00:06:37.575] Server  LOG      ✓ Compiled in 8ms
+[00:06:42.412] Server  LOG      ✓ Compiled in 11ms
+[00:06:55.962] Server  LOG      ✓ Compiled in 14ms
+[00:06:59.146] Server  LOG      ✓ Compiled in 10ms
+[00:07:04.364] Server  LOG      ✓ Compiled in 12ms
+[00:07:10.024] Server  LOG      ✓ Compiled in 14ms
+[00:07:17.445] Server  LOG      ✓ Compiled in 12ms
+[00:07:23.367] Server  LOG      ✓ Compiled in 14ms
+[00:07:26.321] Server  LOG      ✓ Compiled in 13ms
+[00:07:31.262] Server  LOG      ✓ Compiled in 16ms
+[00:07:32.709] Server  LOG      ✓ Compiled in 13ms
+[00:07:34.963] Server  LOG      ✓ Compiled in 14ms
+[00:07:50.247] Server  LOG      ✓ Compiled in 11ms
+[00:07:55.491] Server  LOG      ✓ Compiled in 11ms
+[00:08:02.407] Server  LOG      ✓ Compiled in 11ms
+[00:08:06.242] Server  LOG      ✓ Compiled in 12ms
+[00:08:18.744] Server  LOG      ✓ Compiled in 16ms
+[00:08:28.479] Server  LOG      ✓ Compiled in 18ms
+[00:08:31.294] Server  LOG      ✓ Compiled in 13ms
+[00:08:44.094] Server  LOG      ✓ Compiled in 14ms
+[00:08:48.526] Server  LOG      ✓ Compiled in 10ms
+[00:08:52.993] Server  LOG      ✓ Compiled in 14ms
+[00:09:02.525] Server  LOG      ✓ Compiled in 8ms
+[00:09:12.261] Server  LOG      ✓ Compiled in 18ms
+[00:09:16.384] Server  LOG      ✓ Compiled in 16ms
+[00:09:18.487] Server  LOG      ✓ Compiled in 13ms
+[00:09:23.388] Server  LOG      ✓ Compiled in 14ms
+[00:09:27.910] Server  LOG      ✓ Compiled in 14ms
+[00:10:46.342] Server  LOG      ✓ Compiled in 13ms
+[00:10:55.557] Server  LOG      ✓ Compiled in 13ms
+[00:11:03.878] Server  LOG      ✓ Compiled in 12ms
+[00:11:10.073] Server  LOG      ✓ Compiled in 10ms
+[00:11:14.559] Server  LOG      ✓ Compiled in 13ms
+[00:11:24.259] Server  LOG      ✓ Compiled in 12ms
+[00:11:26.441] Server  LOG      ✓ Compiled in 10ms
+[00:11:30.225] Server  LOG      ✓ Compiled in 15ms
+[00:11:36.289] Server  LOG      ✓ Compiled in 14ms
+[00:12:05.482] Server  LOG      ✓ Compiled in 14ms
+[00:12:06.087] Browser ERROR   ./components/worksection.tsx:38:38
+Parsing ecmascript source code failed
+  36 |             id: 3,
+  37 |             title: "Portfolio Dashboard",
+> 38 |             category: "web", "design",
+     |                                      ^
+  39 |             description: "Interactive portfolio management system with real-time analytics, intuitive interface, and comprehensive project tracking.",
+  40 |             fullDescription: "Advanced dashboard application for portfolio management with real-time data visualization. Built using React and Chart.js. Features include project tracking, time management, client management, invoice generation, and detailed reporting capabilities.",
+  41 |             image: "/images/porto.png",
+
+Unexpected token `,`. Expected identifier
+
+Import traces:
+  Client Component Browser:
+    ./components/worksection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/worksection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:13:39.057] Server  LOG      ✓ Compiled in 12ms
+[00:13:43.269] Server  LOG      ✓ Compiled in 12ms
+[00:13:51.892] Server  LOG      ✓ Compiled in 14ms
+[00:14:16.956] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/" "received" null
+[00:14:16.977] Server  LOG      ✓ Compiled in 11ms
+[00:14:21.289] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/profile" "received" null
+[00:14:21.298] Server  LOG      ✓ Compiled in 12ms
+[00:14:25.014] Server  LOG      ✓ Compiled in 12ms
+[00:14:25.042] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/profile.jp" "received" null
+[00:14:33.055] Server  LOG      ✓ Compiled in 11ms
+[00:14:33.204] Browser WARN    Image with src "/images/profile.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:58.271] Server  LOG      ✓ Compiled in 21ms
+[00:14:58.488] Browser WARN    Image with src "/images/profile1.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:43.269] Server  LOG      ✓ Compiled in 15ms
+[00:15:43.317] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/ima.jpg" "received" null
+[00:15:44.670] Server  LOG      ✓ Compiled in 13ms
+[00:15:44.837] Browser WARN    Image with src "/images/images.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:19:50.173] Server  LOG      ✓ Compiled in 14ms
+[00:19:50.242] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/profile3.jpg" "received" null
+[00:19:52.215] Server  LOG      ✓ Compiled in 13ms
+[00:19:52.449] Browser WARN    Image with src "/images/profile2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:25:40.354] Server  LOG      ✓ Compiled in 10ms
+[00:25:43.580] Server  LOG      ✓ Compiled in 10ms
+[00:25:44.955] Server  LOG      ✓ Compiled in 8ms
+[00:25:54.011] Server  LOG      ✓ Compiled in 9ms
+[00:25:58.107] Server  LOG      ✓ Compiled in 8ms
+[00:26:06.801] Server  LOG      ✓ Compiled in 9ms
+[00:55:58.072] Server  LOG      ✓ Compiled in 26ms
+[00:56:53.247] Server  LOG      ✓ Compiled in 16ms
+[01:19:00.804] Server  LOG      ✓ Compiled in 17ms
+[01:19:14.760] Server  LOG      ✓ Compiled in 23ms
+[01:19:28.019] Server  LOG      ✓ Compiled in 10ms
+[01:20:34.266] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:35.203] Browser WARN    Image with src "/images/profile.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:20:35.203] Browser WARN    Image with src "/images/profile1.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:20:35.203] Browser WARN    Image with src "/images/images.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:20:35.203] Browser WARN    Image with src "/images/profile2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:33:11.571] Server  LOG      ✓ Compiled in 8ms
+[01:33:22.828] Server  LOG      ✓ Compiled in 8ms
+[01:33:37.536] Server  LOG      ✓ Compiled in 8ms
+[01:33:50.645] Server  LOG      ✓ Compiled in 6ms
+[01:33:56.470] Server  LOG      ✓ Compiled in 9ms
+[01:34:00.950] Server  LOG      ✓ Compiled in 10ms
+[01:36:31.716] Server  LOG      ✓ Compiled in 14ms
+[01:36:40.934] Server  LOG      ✓ Compiled in 13ms
+[01:36:43.864] Server  LOG      ✓ Compiled in 10ms
+[01:38:09.084] Server  LOG      ✓ Compiled in 9ms
+[01:38:11.680] Server  LOG      ✓ Compiled in 11ms
+[01:38:21.366] Server  LOG      ✓ Compiled in 13ms
+[01:38:32.848] Server  LOG      ✓ Compiled in 13ms
+[01:38:44.432] Server  LOG      ✓ Compiled in 17ms
+[01:38:59.266] Server  LOG      ✓ Compiled in 12ms
+[01:39:10.066] Server  LOG      ✓ Compiled in 19ms
+[02:00:53.386] Server  LOG      ✓ Compiled in 10ms
+[02:00:55.609] Server  LOG      ✓ Compiled in 7ms
+[02:00:57.200] Server  LOG      ✓ Compiled in 13ms
+[02:00:59.132] Server  LOG      ✓ Compiled in 13ms
+[02:01:01.258] Server  LOG      ✓ Compiled in 7ms
+[02:01:04.964] Server  LOG      ✓ Compiled in 7ms
+[02:01:27.994] Server  LOG      ✓ Compiled in 5ms
+[02:01:30.075] Server  LOG      ✓ Compiled in 5ms
+[02:01:31.444] Server  LOG      ✓ Compiled in 7ms
+[02:01:32.819] Server  LOG      ✓ Compiled in 4ms
+[02:01:34.427] Server  LOG      ✓ Compiled in 4ms
+[02:01:35.961] Server  LOG      ✓ Compiled in 5ms
+[02:01:39.459] Server  LOG      ✓ Compiled in 4ms
+[02:01:41.369] Server  LOG      ✓ Compiled in 5ms
+[02:01:53.953] Server  LOG      ✓ Compiled in 5ms
+[02:01:54.769] Server  LOG      ✓ Compiled in 4ms
+[02:01:57.052] Server  LOG      ✓ Compiled in 5ms
+[02:02:02.604] Server  LOG      ✓ Compiled in 6ms
+[02:03:21.841] Server  LOG      ✓ Compiled in 5ms
+[02:03:22.909] Server  LOG      ✓ Compiled in 5ms
+[02:03:24.302] Server  LOG      ✓ Compiled in 4ms
+[02:03:30.417] Server  LOG      ✓ Compiled in 5ms
+[02:03:32.484] Server  LOG      ✓ Compiled in 4ms
+[02:03:35.467] Server  LOG      ✓ Compiled in 4ms
+[02:03:36.868] Server  LOG      ✓ Compiled in 6ms
+[02:03:44.459] Server  LOG      ✓ Compiled in 6ms
