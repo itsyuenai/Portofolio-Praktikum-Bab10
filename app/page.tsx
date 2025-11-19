@@ -71,27 +71,19 @@ export default function Home(){
 
   // Stats data
   const stats = [
-    { number: "50+", label: "Projects Completed", icon: "bi-check-circle-fill" },
-    { number: "30+", label: "Happy Clients", icon: "bi-people-fill" },
+    { number: "20+", label: "Projects Completed", icon: "bi-check-circle-fill" },
+    { number: "3+", label: "Happy Clients", icon: "bi-people-fill" },
     { number: "2+", label: "Years Experience", icon: "bi-award-fill" },
     { number: "100%", label: "Client Satisfaction", icon: "bi-star-fill" }
   ];
 
-  // UPDATED: Fungsi Download CV
   const handleDownloadCV = () => {
-    // Method 1: Jika CV sudah ada di folder public
     const link = document.createElement('a');
-    link.href = '/cv/Naisya_Yuen_CV.pdf'; // Sesuaikan path file CV Anda
-    link.download = 'Naisya_Yuen_CV.pdf';
+    link.href = '/CV.pdf'; 
+    link.download = 'CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    
-    // Method 2: Jika ingin buka di tab baru
-    // window.open('/cv/Naisya_Yuen_CV.pdf', '_blank');
-    
-    // Method 3: Jika CV di Google Drive atau link eksternal
-    // window.open('https://drive.google.com/file/d/YOUR_FILE_ID/view', '_blank');
   };
 
   return(
