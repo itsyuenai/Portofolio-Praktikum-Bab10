@@ -62,7 +62,7 @@ export default function AboutSection() {
                     <Col lg={6} className="order-lg-1 order-2 animate-on-scroll">
                         <div className="about-content">
                             <h2>About Me</h2>
-                            <h5 className="mb-4">Passionate Developer & Designer</h5>
+                            <h5 className="mb-4">Passionate Web & Mobile App Developer</h5>
                             <p className="lead">
                                 Hello! I'm Naisya Yuen, an Informatics Engineering student and dedicated developer passionate about crafting seamless digital experiences.
                             </p>
