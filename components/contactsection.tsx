@@ -2,12 +2,14 @@
 import { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 
-function ContactSection(){
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+const INITIAL_FORM_DATA = {
+    name: '',
+    email: '',
+    message: ''
+};
+
+function ContactSection() {
+    const [formData, setFormData] = useState(INITIAL_FORM_DATA);
     const [showSuccess, setShowSuccess] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -21,11 +23,11 @@ function ContactSection(){
         e.preventDefault();
         console.log('Form submitted:', formData);
         setShowSuccess(true);
-        setFormData({ name: '', email: '', message: '' });
+        setFormData(INITIAL_FORM_DATA);
         setTimeout(() => setShowSuccess(false), 5000);
     };
 
-    return(
+    return (
         <Container>
             <Row className="justify-content-center">
                 <Col lg={8} md={10}>
@@ -33,13 +35,13 @@ function ContactSection(){
                         <div className="text-center mb-4">
                             <h2>Get In Touch</h2>
                             <p>
-                                Have a project in mind? Let's discuss how we can work together to bring your vision to life.
+                                Have a project in mind? Let's collaborate to bring your vision to life.
                             </p>
                         </div>
 
                         {showSuccess && (
                             <Alert variant="success" onClose={() => setShowSuccess(false)} dismissible>
-                                <strong>Thank you!</strong> Your message has been sent successfully. I'll get back to you soon.
+                                <strong>Thank you!</strong> Your message has been sent successfully. I will get back to you shortly.
                             </Alert>
                         )}
 
@@ -48,8 +50,8 @@ function ContactSection(){
                                 <Col md={6}>
                                     <Form.Group className="form-group">
                                         <Form.Label>Full Name *</Form.Label>
-                                        <Form.Control 
-                                            type="text" 
+                                        <Form.Control
+                                            type="text"
                                             placeholder="Your name"
                                             name="name"
                                             value={formData.name}
@@ -61,8 +63,8 @@ function ContactSection(){
                                 <Col md={6}>
                                     <Form.Group className="form-group">
                                         <Form.Label>Email Address *</Form.Label>
-                                        <Form.Control 
-                                            type="email" 
+                                        <Form.Control
+                                            type="email"
                                             placeholder="your@email.com"
                                             name="email"
                                             value={formData.email}
@@ -72,10 +74,10 @@ function ContactSection(){
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            
+
                             <Form.Group className="form-group">
                                 <Form.Label>Your Message *</Form.Label>
-                                <Form.Control 
+                                <Form.Control
                                     as="textarea"
                                     rows={5}
                                     placeholder="Tell me about your project..."
@@ -85,10 +87,10 @@ function ContactSection(){
                                     required
                                 />
                             </Form.Group>
-                            
+
                             <div className="text-center mt-4">
-                                <Button 
-                                    variant="primary" 
+                                <Button
+                                    variant="primary"
                                     type="submit"
                                     size="lg"
                                 >
@@ -100,7 +102,7 @@ function ContactSection(){
                 </Col>
             </Row>
         </Container>
-    )
+    );
 }
 
 export default ContactSection;

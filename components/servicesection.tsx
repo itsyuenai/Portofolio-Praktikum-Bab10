@@ -1,53 +1,55 @@
 "use client";
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
-function ServiceSection(){
-    const services = [
-        {
-            icon: "/images/web-design.png",
-            title: "Web Design",
-            description: "Creating modern, responsive, and user-friendly web designs that captivate your audience and enhance user experience."
-        },
-        {
-            icon: "/images/web.png",
-            title: "Web Development",
-            description: "Building high-performance web applications using cutting-edge technologies like React, Next.js, and modern JavaScript."
-        },
-        {
-            icon: "/images/graphic-design.png",
-            title: "UI/UX Design",
-            description: "Improving your website's visibility in search engines with proven SEO strategies and technical optimization."
-        }
-    ];
+const SERVICES_DATA = [
+    {
+        icon: "/images/web-design.png",
+        title: "Mobile App Dev",
+        description: "Building robust, high-performance mobile applications with intuitive interfaces and seamless cross-platform user experiences."
+    },
+    {
+        icon: "/images/web.png",
+        title: "Web Development",
+        description: "Engineering high-performance and scalable web applications utilizing cutting-edge technologies like React and Next.js."
+    },
+    {
+        icon: "/images/graphic-design.png",
+        title: "UI/UX Design",
+        description: "Crafting intuitive, accessible, and visually engaging user interfaces focused on delivering seamless user experiences."
+    }
+];
 
-    return(
-        <Container>
-            <div className="section-header">
-                <h2>My Services</h2>
-                <p>
-                    Comprehensive solutions to bring your digital vision to life with professional expertise
-                </p>
-            </div>
-            
-            <Row className="g-4">
-                {services.map((service, index) => (
-                    <Col lg={4} md={6} key={index}>
-                        <div className="service-box">
-                            <div className="service-icon">
-                                <Image 
-                                    src={service.icon} 
-                                    alt={service.title}
-                                    fluid
-                                />
+function ServiceSection() {
+    return (
+        <section id="services" className="section-spacing">
+            <Container>
+                <div className="section-header">
+                    <h2>My Services</h2>
+                    <p>
+                        Comprehensive solutions to bring your digital vision to life with professional expertise.
+                    </p>
+                </div>
+
+                <Row className="g-4">
+                    {SERVICES_DATA.map((service, index) => (
+                        <Col lg={4} md={6} key={index}>
+                            <div className="service-box">
+                                <div className="service-icon">
+                                    <Image
+                                        src={service.icon}
+                                        alt={service.title}
+                                        fluid
+                                    />
+                                </div>
+                                <h3>{service.title}</h3>
+                                <p>{service.description}</p>
                             </div>
-                            <h3>{service.title}</h3>
-                            <p>{service.description}</p>
-                        </div>
-                    </Col>
-                ))}
-            </Row>
-        </Container>
-    )
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+        </section>
+    );
 }
 
 export default ServiceSection;

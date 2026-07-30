@@ -4,6 +4,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+const NAV_ITEMS = [
+    { id: '#home', label: 'Home', section: 'home' },
+    { id: '#about', label: 'About', section: 'about' },
+    { id: '#portfolio', label: 'Portfolio', section: 'portfolio' },
+    { id: '#services', label: 'Services', section: 'services' },
+    { id: '#contact', label: 'Contact', section: 'contact' }
+];
+
 function ModernNavbar() {
     const [scrolled, setScrolled] = useState(false);
     const [activeLink, setActiveLink] = useState('#home');
@@ -11,7 +19,7 @@ function ModernNavbar() {
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
-            
+
             // Show/hide scroll to top button
             const scrollToTopBtn = document.querySelector('.scroll-to-top');
             if (scrollToTopBtn) {
@@ -21,18 +29,17 @@ function ModernNavbar() {
                     scrollToTopBtn.classList.remove('visible');
                 }
             }
-            
-            const sections = ['home', 'about', 'skills', 'portfolio', 'services', 'contact'];
+
             const scrollPosition = window.scrollY + 100;
-            
-            for (const section of sections) {
-                const element = document.getElementById(section);
+
+            for (const item of NAV_ITEMS) {
+                const element = document.getElementById(item.section);
                 if (element) {
                     const offsetTop = element.offsetTop;
                     const offsetBottom = offsetTop + element.offsetHeight;
-                    
+
                     if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-                        setActiveLink(`#${section}`);
+                        setActiveLink(item.id);
                         break;
                     }
                 }
@@ -48,52 +55,27 @@ function ModernNavbar() {
     };
 
     return (
-        <Navbar 
-            expand="lg" 
+        <Navbar
+            expand="lg"
             className={`modern-navbar fixed-top ${scrolled ? 'scrolled' : ''}`}
         >
             <Container>
                 <Navbar.Brand href="#home" onClick={() => handleNavClick('#home')}>
-                    Naisya Yuen
+                    Naisya Yuen Ra'af
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarNav" />
                 <Navbar.Collapse id="navbarNav">
                     <Nav className="ms-auto">
-                        <Nav.Link 
-                            href="#home" 
-                            className={activeLink === '#home' ? 'active' : ''}
-                            onClick={() => handleNavClick('#home')}
-                        >
-                            Home
-                        </Nav.Link>
-                        <Nav.Link 
-                            href="#about" 
-                            className={activeLink === '#about' ? 'active' : ''}
-                            onClick={() => handleNavClick('#about')}
-                        >
-                            About
-                        </Nav.Link>
-                        <Nav.Link 
-                            href="#portfolio" 
-                            className={activeLink === '#portfolio' ? 'active' : ''}
-                            onClick={() => handleNavClick('#portfolio')}
-                        >
-                            Portfolio
-                        </Nav.Link>
-                        <Nav.Link 
-                            href="#services" 
-                            className={activeLink === '#services' ? 'active' : ''}
-                            onClick={() => handleNavClick('#services')}
-                        >
-                            Services
-                        </Nav.Link>
-                        <Nav.Link 
-                            href="#contact" 
-                            className={activeLink === '#contact' ? 'active' : ''}
-                            onClick={() => handleNavClick('#contact')}
-                        >
-                            Contact
-                        </Nav.Link>
+                        {NAV_ITEMS.map((item) => (
+                            <Nav.Link
+                                key={item.id}
+                                href={item.id}
+                                className={activeLink === item.id ? 'active' : ''}
+                                onClick={() => handleNavClick(item.id)}
+                            >
+                                {item.label}
+                            </Nav.Link>
+                        ))}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

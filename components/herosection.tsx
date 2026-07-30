@@ -11,39 +11,39 @@ interface Slide {
     ctaLink?: string;
 }
 
-const HeroSection = () => {
-    const slides: Slide[] = [
-        {
-            title: "E-Commerce Platform",
-            subtitle: "Modern Online Shopping Experience",
-            description: "Full-stack e-commerce solution with payment integration and admin dashboard",
-            imageUrl: "/images/idwatch.png",
-            cta: "View Project",
-            ctaLink: "https://github.com/itsyuenai/TOKOJAM"
-        },
-        {
-            title: "Insurance Website",
-            subtitle: "Business Website for Insurance Services",
-            description: "A professional company site with informative pages, clean layout, and SEO support.",
-            imageUrl: "/images/insurance.png",
-            cta: "View Project",
-            ctaLink: "https://github.com/itsyuenai/NaInsurance"
-        },
-        {
-            title: "Portfolio Dashboard",
-            subtitle: "Dashboard for Data Monitoring and Insights",
-            description: "An interactive dashboard with live data, visual reports, and easy to read analytics.",
-            imageUrl: "/images/porto.png",
-            cta: "View Project",
-            ctaLink: "https://github.com/itsyuenai/MyPortofolio"
-        },
-    ];
+const HERO_SLIDES: Slide[] = [
+    {
+        title: "E-Commerce Platform",
+        subtitle: "Modern Online Shopping Experience",
+        description: "A full-stack e-commerce solution featuring secure payment integration and a comprehensive admin dashboard.",
+        imageUrl: "/images/idwatch.png",
+        cta: "View Project",
+        ctaLink: "https://github.com/itsyuenai/TOKOJAM"
+    },
+    {
+        title: "ScanIn Attendance System",
+        subtitle: "Academic Attendance Management",
+        description: "A streamlined attendance tracking platform tailored for seamless interaction between university students and lecturers.",
+        imageUrl: "/images/scanin.png",
+        cta: "View Project",
+        ctaLink: "https://github.com/Einnyboi/ScanIn-Frontend"
+    },
+    {
+        title: "IdeConnect Hub",
+        subtitle: "Field Technician Management",
+        description: "A dedicated mobile application designed to assist field technicians in managing and executing on-site tasks efficiently.",
+        imageUrl: "/images/ideconnect.png",
+        cta: "View App",
+        ctaLink: "https://play.google.com/store/apps/details?id=com.idenigma.ideconnect_hub"
+    },
+];
 
+const HeroSection = () => {
     return (
         <Carousel fade interval={6000} className="hero-carousel" id="home" controls indicators>
-            {slides.map((slide, index) => (
+            {HERO_SLIDES.map((slide, index) => (
                 <Carousel.Item key={index}>
-                    <div 
+                    <div
                         style={{
                             backgroundImage: `url(${slide.imageUrl})`,
                             backgroundSize: "cover",
@@ -62,12 +62,13 @@ const HeroSection = () => {
                                 <h1 className="display-3 fw-bold mb-3">{slide.title}</h1>
                                 <h2 className="h4 mb-3" style={{ fontWeight: 400 }}>{slide.subtitle}</h2>
                                 <p className="lead mb-4">{slide.description}</p>
-                                {slide.cta && (
-                                    <Button 
-                                        variant="light" 
-                                        size="lg" 
+                                {slide.cta && slide.ctaLink && (
+                                    <Button
+                                        variant="light"
+                                        size="lg"
                                         href={slide.ctaLink}
                                         className="hero-cta-btn"
+                                        target={slide.ctaLink.includes('play.google.com') ? "_blank" : "_self"}
                                     >
                                         {slide.cta} <i className="bi bi-arrow-right ms-2"></i>
                                     </Button>

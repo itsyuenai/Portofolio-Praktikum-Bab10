@@ -8,23 +8,24 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
-// DIPERBARUI: Judul dan deskripsi untuk portofolio
 export const metadata: Metadata = {
-  title: "Naisya Yuen - Personal Portfolio",
-  description: "Selamat datang di portofolio pribadi Naisya Yuen. Lihat proyek dan keahlian saya.",
+  title: "Naisya Yuen | Front-End Developer & UI Designer",
+  description:
+    "Portfolio Naisya Yuen — Front-End Developer yang fokus pada UI/UX modern, responsive design, dan web performance.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>

@@ -2,10 +2,32 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+const SOCIAL_LINKS = [
+    { href: "mailto:naisyayr09@gmail.com", label: "Gmail", icon: "bi-envelope" },
+    { href: "https://instagram.com/naisayayuen", label: "Instagram", icon: "bi-instagram" },
+    { href: "https://www.linkedin.com/in/naisyayuenr/", label: "LinkedIn", icon: "bi-linkedin" },
+    { href: "https://github.com/itsyuenai", label: "GitHub", icon: "bi-github" }
+];
+
+const QUICK_LINKS = [
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#skills", label: "Skills" },
+    { href: "#portfolio", label: "Portfolio" },
+    { href: "#services", label: "Services" },
+    { href: "#contact", label: "Contact" }
+];
+
+const SERVICES_LIST = [
+    "Web Design",
+    "Web Development",
+    "UI/UX Design"
+];
+
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
-    return(
+    return (
         <footer className='modern-footer'>
             <Container>
                 <Row className="g-4">
@@ -13,35 +35,27 @@ export default function Footer() {
                     <Col lg={4} md={6}>
                         <h3>Naisya Yuen</h3>
                         <p>
-                            A passionate web developer and designer creating beautiful digital experiences. 
+                            A dedicated web developer and UI designer creating beautiful, scalable digital experiences.
                             Based in Bogor, Indonesia.
                         </p>
                         <div className="social-links d-flex gap-2 mt-3">
-                            <a href="mailto:naisyayr09@gmail.com" aria-label="Gmail">
-                                <i className='bi bi-envelope'></i>
-                            </a>
-                            <a href="https://instagram.com/naisayayuen" aria-label="Instagram">
-                                <i className='bi bi-instagram'></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/naisyayuenr/" aria-label="LinkedIn">
-                                <i className='bi bi-linkedin'></i>
-                            </a>
-                            <a href="https://github.com/itsyuenai" aria-label="GitHub">
-                                <i className='bi bi-github'></i>
-                            </a>
+                            {SOCIAL_LINKS.map((link, idx) => (
+                                <a key={idx} href={link.href} aria-label={link.label}>
+                                    <i className={`bi ${link.icon}`}></i>
+                                </a>
+                            ))}
                         </div>
                     </Col>
-                    
+
                     {/* Quick Links */}
                     <Col lg={2} md={6}>
                         <h3>Quick Links</h3>
                         <ul className='list-unstyled'>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            {QUICK_LINKS.map((link, idx) => (
+                                <li key={idx}>
+                                    <a href={link.href}>{link.label}</a>
+                                </li>
+                            ))}
                         </ul>
                     </Col>
 
@@ -49,12 +63,14 @@ export default function Footer() {
                     <Col lg={3} md={6}>
                         <h3>Services</h3>
                         <ul className='list-unstyled'>
-                            <li><i className="bi bi-check2 me-2"></i>Web Design</li>
-                            <li><i className="bi bi-check2 me-2"></i>Web Development</li>
-                            <li><i className="bi bi-check2 me-2"></i>UI/UX Design</li>
+                            {SERVICES_LIST.map((service, idx) => (
+                                <li key={idx}>
+                                    <i className="bi bi-check2 me-2"></i>{service}
+                                </li>
+                            ))}
                         </ul>
                     </Col>
-                    
+
                     {/* Contact Info */}
                     <Col lg={3} md={6}>
                         <h3>Contact</h3>
@@ -73,8 +89,8 @@ export default function Footer() {
                             </li>
                         </ul>
                     </Col>
-                </Row> 
-                
+                </Row>
+
                 {/* Copyright */}
                 <div className="footer-bottom">
                     <Row>
@@ -87,5 +103,5 @@ export default function Footer() {
                 </div>
             </Container>
         </footer>
-    )
+    );
 }
